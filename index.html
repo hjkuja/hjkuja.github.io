@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="I'm Hannu, a software developer. This page is about me." />
+    <meta name="author" content="Hannu Kujanpää" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./styles/style.min.css">
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/99e4242385.js" crossorigin="anonymous"></script>
+
+    <title>Hannu's homepage</title>
+</head>
+
+<body>
+
+    <!-- Breadcrumbs -->
+    <div class="fixed-top">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><span class="linkText">Software developers</span></li>
+                <li class="breadcrumb-item"><span class="linkText">Best developers</span></li>
+                <li class="breadcrumb-item active" aria-current="page">Hannu Kujanpää </li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Image -->
+    <div id="pfp">
+        <div class="text-center">
+            <img src="./img/naama.png" class="rounded mx-auto d-block"
+                style="height: 250px; width: 250px; cursor:pointer;" alt="profile picture" onclick="redir()">
+            <p class="lead">Hannu Kujanpää</p>
+        </div>
+    </div>
+
+    <div class="container-md">
+        <!-- Who -->
+        <h1 class="display-4">Who am I?</h1>
+        <br>
+        <p class="lead">
+            I'm Hannu, an ICT student at <a href="https://www.jamk.fi/en/Home/">JAMK</a> and currently working at <a
+                href="https://pinja.com/">Pinja</a>.
+            Almost everything to do with STEM has always excited me.
+            When I started coding in upper secondary school, I found myself really enjoying it – now I'm a software
+            developer!
+        </p>
+
+        <!-- Work -->
+        <h1 class="display-4">What I can do?</h1>
+        <br>
+        <p class="lead">
+            I've worked with many programming languages, frameworks and programs.
+            Currently I code mainly .NET stuff with some JavaScript here and there.
+        </p>
+        <p class="lead">
+            Things I'm more or less familiar with:
+            C#, Visual Basic (with Web Forms), JavaScript, TypeScript, NestJS, Node.js (Express), React (and React
+            Native), Python, Swift, Rust, Kotlin and C++.
+        </p>
+
+        <p class="lead">
+            I also have experience from Linux servers, Docker containers, Nginx and GitLab CI/CD.
+        </p>
+
+        <h1 class="display-4">Examples of my work</h1>
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            MUUV Maps (Team leader)
+                        </h5>
+                        <p class="card-text">
+                            A map service for finding outside sports places.
+                            App is using <code>React</code>, <code>Leaflet</code> and <code>Node.js</code> in a
+                            <code>Docker container</code>.
+                            <a href="http://team-c-2020.pages.labranet.jamk.fi/site/">Team of 5 people.</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://team-c-2020.pages.labranet.jamk.fi/core/60-Tuotanto/demo-versio/"
+                            class="btn btn-primary">Check it out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Pull My Data (Team leader)
+                        </h5>
+                        <p class="card-text">
+                            An app where users can import their Garmin data and answer questions about physical
+                            rehabilitation.
+                            App is made using <code>NestJS</code>, <code>MongoDB</code> and <code>React</code> in
+                            <code>Docker containers</code>. The Docker images are built with
+                            <code>Jenkins pipelines</code>.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="http://codebox.pages.labranet.jamk.fi/core/20-Arkkitehtuuri-ja-suunnittelu/toteutus/"
+                            class="btn btn-primary">Check it out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Bob the Bot</h5>
+                        <p class="card-text">
+                            Bob the Bot is a simple Discord bot made with <code>JavaScript</code> using
+                            <code>Discord.js</code>.
+                            The bot is deployed to my DigitalOcean server into a <code>Docker container</code> with
+                            <code>GitLab CI/CD pipeline</code>.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://gitlab.com/hjkuja/bob-the-bot" class="btn btn-primary">Check it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="lead">Links</p>
+            <div class="row row-cols-4" style="text-align: center;">
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/hjkuja/" style="color: #0077B5;">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://gitlab.com/hjkuja" style="color: #E86A55;">
+                        <i class="fab fa-gitlab fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col"><a href="https://pikadev.fi/public/5ed505c9b27e6dec183f2476" style="color: #000DFF;">
+                        <i class="fab fa-dev fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col" style="margin-top: -3px;">
+                    <a href="https://gitlab.labranet.jamk.fi/M0374" style="color: #E86A55;">
+                        <i class="fab fa-2x"><img src="./ico/jamk-icon.png" style="height: 30px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>redir = () => { window.location.href = 'https://www.linkedin.com/in/hjkuja/'; }</script>
+</body>
+
+</html>
