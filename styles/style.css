@@ -1,0 +1,61 @@
+.linktext {
+    color: #1a75ff
+}
+
+.text {
+    color: var(--text);
+}
+
+.navpanel {
+    margin-left: 1em;
+    padding-top: 1em;
+    color: #e9fbf7;
+}
+
+.profile-wrapper {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;          /* hides the cropped parts */
+}
+
+.profile-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* crops the image */
+  object-position: center;   /* adjust this to move the crop */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: var(--background);
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--background);
+}
+
+@media only screen and (max-width:600px) {
+    .footer {
+        margin-bottom: 12vh
+    }
+}
+
+:root{
+--text: #dcdcf8;
+--background: #050718;
+--primary: #8990e6;
+--secondary: #831d87;
+--accent: #da55bc;
+
+}
+
