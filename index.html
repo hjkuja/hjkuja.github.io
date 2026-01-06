@@ -31,12 +31,12 @@
     </nav>
 
     <!-- Image -->
-    <div id="pfp" class="d-flex justify-content-center mt-2">
+    <div class="d-flex justify-content-center mt-2">
         <div class="text-center">
             <div class="profile-wrapper">
                 <img src="./img/pfp-cropped.png" class="img-fluid rounded-4" alt="Profile picture" onclick="redir()">
             </div>
-            <!-- The name -->
+
             <p class="lead mt-2">Hannu Kujanpää</p>
         </div>    
     </div>
@@ -52,82 +52,107 @@
             developer!
         </p>
 
+        <p class="lead">
+            In my freetime I like to play board and computer games as well as listen to music.
+            If you see me around, I'll probably have my headphones on.
+        </p>
+
         <!-- Work -->
         <h1 class="display-4">What I can do?</h1>
         <br>
         <p class="lead">
             I've worked with many programming languages, frameworks and programs.
-            Currently I code mainly .NET stuff with some JavaScript here and there.
-        </p>
-        <p class="lead">
-            Things I'm more or less familiar with:
-            C#, ASP.NET Core, EF, Visual Basic (with Web Forms), JavaScript, TypeScript, Rust, NestJS, Node.js, React, React
-            Native, Python, Swift and Kotlin.
+            Recently I've coded mainly C# .NET stuff: ASP.NET Core API and .NET 8 services and console applications.
+            I've designed and implemented the majority of our team's <a href="https://urn.fi/URN:NBN:fi:amk-2022111823094">CI/CD infrastructure</a> 
+            and have currently the responsibility to lead the CI/CD development.
         </p>
 
         <p class="lead">
-            I also have experience from <a href="https://urn.fi/URN:NBN:fi:amk-2022111823094">CI/CD</a>, Docker containers and Linux servers.
+            I'm most familiar with C#, ASP.NET Core, .NET, JavaScript/TypeScript and Visual Basic.
+        </p>
+
+        <p class="lead">
+            Using and presenting AI tools has been lately one of my AI Ambassador tasks.
+            I've used GitHub Copilot and its cloud coding abilities for actual work 
+            while I've tried out Ollama and some local models in my free time.
+        </p>
+
+        <!-- from <a href="https://urn.fi/URN:NBN:fi:amk-2022111823094">CI/CD</a> -->
+        <p class="lead">
+            Then some keywords that I'm more or less familiar with: <br/>
+            EF, Docker, Windows Server, Linux, Rust, Node.js, React and React Native, Python, Swift and Kotlin.
         </p>
 
         <h1 class="display-4">Examples of my work</h1>
         <br>
 
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-3">
-                <div class="card text-center h-100">
+        <div class="row">
+            <div class="col-sm mb-3">
+                <div class="card text-center h-100 dark-card" data-bs-theme="dark">
                     <div class="card-body">
                         <h5 class="card-title">
                             Novi by Pinja
                         </h5>
+                        <h6 class="card-subtitle mb-2 mt-1 text-body-secondary fw-normal">
+                            Software developer, CI/CD leader, AI Ambassador
+                        </h6>
                         <p class="card-text">
                             Preventive maintenance system which is used in over 30 countries. 
                             Used by companies such as 
                             <a href="https://pinja.com/en/success-stories/veolia">Veolia</a> and 
                             <a href="https://pinja.com/en/success-stories/valmet-north-american-roll-service">Valmet</a>.
-                            Keywords are <code>ASP.NET Core</code>, <code>.NET Framework</code>, <code>CI/CD</code> and <code>SQL</code>.
+                            Keywords: <code>ASP.NET Core</code>, <code>.NET</code>, <code>.NET Framework</code>, 
+                            <code>CI/CD</code> and <code>SQL</code>.
                         </p>
                     </div>
                     <div class="card-footer">
                         <a href="https://pinja.com/en/services/manufacturing-industry/novi"
-                            class="btn btn-primary">Check it out</a>
+                           class="btn nappi fw-semibold">Check it out</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col mb-3">
-                <div class="card text-center h-100">
+            <div class="col-sm mb-3">
+                <div class="card text-center h-100 dark-card" data-bs-theme="dark">
                     <div class="card-body">
                         <h5 class="card-title">
-                            Pull My Data (Team leader)
+                            Pull My Data
                         </h5>
+                        <h6 class="card-subtitle mb-2 mt-1 text-body-secondary fw-normal">
+                            Team leader, developer
+                        </h6>
                         <p class="card-text">
                             An app where users can import their Garmin data and answer questions about physical
                             rehabilitation.
-                            App is made using <code>NestJS</code>, <code>MongoDB</code> and <code>React</code> in
+                            The app is made using <code>NestJS</code>, <code>MongoDB</code> and <code>React</code> running in
                             <code>Docker containers</code>. The Docker images are built with
                             <code>Jenkins pipelines</code>.
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="http://codebox.pages.labranet.jamk.fi/core/20-Arkkitehtuuri-ja-suunnittelu/toteutus/"
-                            class="btn btn-primary">Check it out</a>
+                        <button type="button" class="btn btn-secondary" disabled>
+                            Ask for details!
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col mb-3">
-                <div class="card text-center h-100">
+            <div class="col-sm mb-3">
+                <div class="card text-center h-100 dark-card" data-bs-theme="dark">
                     <div class="card-body">
-                        <h5 class="card-title">Bob the Bot</h5>
+                        <h5 class="card-title">Planting Calculator</h5>
+                        <h6 class="card-subtitle mb-2 mt-1 text-body-secondary fw-normal">
+                            Trying out Kotlin & Android development
+                        </h6>
                         <p class="card-text">
-                            Bob the Bot is a simple Discord bot made with <code>JavaScript</code> using
-                            <code>Discord.js</code>.
-                            The bot is deployed to my DigitalOcean server into a <code>Docker container</code> with
-                            <code>GitLab CI/CD pipeline</code>.
+                            Planting calculator is a simple app to calculate how much barley needs to be planted per hectare.
+                            My dad wanted an app for this so I made it.
+                            This was a rather quick reintroduction to <code>Kotlin</code> and <code>Android</code> development.
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="https://gitlab.com/hjkuja/bob-the-bot" class="btn btn-primary">Check it out</a>
+                        <a href="https://gitlab.com/hjkuja/bob-the-bot" 
+                           class="btn nappi fw-semibold">Check it out</a>
                     </div>
                 </div>
             </div>

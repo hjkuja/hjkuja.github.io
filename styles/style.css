@@ -1,7 +1,3 @@
-.linktext {
-    color: #1a75ff
-}
-
 .text {
     color: var(--text);
 }
@@ -15,14 +11,32 @@
 .profile-wrapper {
   width: 250px;
   height: 250px;
-  overflow: hidden;          /* hides the cropped parts */
 }
 
-.profile-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;         /* crops the image */
-  object-position: center;   /* adjust this to move the crop */
+.dark-card {
+    background-color: var(--primary);
+}
+
+.card {
+    color: var(--text);
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--background);
+}
+
+.nappi {
+    color: var(--background);
+    background-color: var(--accent);
+}
+
+.nappi:hover {
+  color: var(--background);
+  background-color: var(--secondary);
+  border-color: var(--bs-btn-hover-border-color);
 }
 
 html {
@@ -37,13 +51,6 @@ body {
     color: var(--text);
 }
 
-.footer {
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: var(--background);
-}
-
 @media only screen and (max-width:600px) {
     .footer {
         margin-bottom: 12vh
@@ -53,9 +60,7 @@ body {
 :root{
 --text: #dcdcf8;
 --background: #050718;
---primary: #8990e6;
---secondary: #831d87;
+--primary: #171e68;
+--secondary: #aa43ae;
 --accent: #da55bc;
-
 }
-
