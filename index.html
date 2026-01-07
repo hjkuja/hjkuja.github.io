@@ -11,8 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
-    <link rel="stylesheet" href="./styles/style.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/99e4242385.js" crossorigin="anonymous"></script>
@@ -21,114 +20,146 @@
 </head>
 
 <body>
+     <nav aria-label="breadcrumb" class="navpanel" data-bs-theme="dark">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Software developers</li>
+            <li class="breadcrumb-item">Best developers</li>
+            <li class="breadcrumb-item active" aria-current="page">Hannu Kujanpää</li>
+        </ol>
+    </nav>
 
-    <!-- Breadcrumbs -->
-    <div class="fixed-top">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><span class="linkText">Software developers</span></li>
-                <li class="breadcrumb-item"><span class="linkText">Best developers</span></li>
-                <li class="breadcrumb-item active" aria-current="page">Hannu Kujanpää </li>
-            </ol>
-        </nav>
-    </div>
-
-    <!-- Image -->
-    <div id="pfp">
+    <div class="d-flex justify-content-center mt-2">
         <div class="text-center">
-            <img src="./img/naama.png" class="rounded mx-auto d-block"
-                style="height: 250px; width: 250px; cursor:pointer;" alt="profile picture" onclick="redir()">
-            <p class="lead">Hannu Kujanpää</p>
-        </div>
+            <div class="profile-wrapper">
+                <img src="./img/pfp-cropped.png" class="img-fluid rounded-4" alt="Profile picture" onclick="redir()">
+            </div>
+
+            <p class="lead mt-2">Hannu Kujanpää</p>
+        </div>    
     </div>
 
     <div class="container-md">
-        <!-- Who -->
         <h1 class="display-4">Who am I?</h1>
         <br>
         <p class="lead">
-            I'm Hannu, currently working at <a href="https://pinja.com/">Pinja</a> as a software developer.
+            I'm Hannu, currently working at <a class="link" href="https://pinja.com/">Pinja</a> as a software developer.
             Almost everything to do with STEM has always excited me.
             When I started coding in upper secondary school, I found myself really enjoying it – now I'm a software
             developer!
         </p>
 
-        <!-- Work -->
+        <p class="lead">
+            In my freetime I like to play board and computer games as well as listen to music.
+            If you see me around, I'll probably have my headphones on.
+        </p>
+
         <h1 class="display-4">What I can do?</h1>
         <br>
         <p class="lead">
             I've worked with many programming languages, frameworks and programs.
-            Currently I code mainly .NET stuff with some JavaScript here and there.
-        </p>
-        <p class="lead">
-            Things I'm more or less familiar with:
-            C#, ASP.NET Core, EF, Visual Basic (with Web Forms), JavaScript, TypeScript, Rust, NestJS, Node.js, React, React
-            Native, Python, Swift and Kotlin.
+            Recently I've coded mainly <code>.NET </code> stuff with <code>C#</code>: <code>ASP.NET Core API</code> and <code>.NET 8</code> services and console applications.
+            I've designed and implemented the majority of our team's <a class="link" href="https://urn.fi/URN:NBN:fi:amk-2022111823094">CI/CD infrastructure</a> 
+            and have currently the responsibility to lead the <code>CI/CD</code> development.
         </p>
 
         <p class="lead">
-            I also have experience from <a href="https://urn.fi/URN:NBN:fi:amk-2022111823094">CI/CD</a>, Docker containers and Linux servers.
+            I'm most familiar with <code>C#</code>, <code>ASP.NET Core</code>, <code>.NET</code>, <code>JavaScript/TypeScript</code> and <code>Visual Basic</code>.
+        </p>
+
+        <p class="lead">
+            Using and presenting AI tools has been lately one of my AI Ambassador tasks.
+            I've used <code>GitHub Copilot</code> and its cloud coding abilities for actual work 
+            while I've tried out <code>Ollama</code> and some local models in my free time.
+        </p>
+
+        <p class="lead">
+            Then some keywords that I'm more or less familiar with: <br/>
+            <code>EF</code>, 
+            <code>Docker</code>, 
+            <code>Windows Server</code>, 
+            <code>Linux</code>, 
+            <code>Azure</code>, 
+            <code>AWS</code>, 
+            <code>Rust</code>, 
+            <code>Node.js</code>, 
+            <code>React</code> and <code>React Native</code>, 
+            <code>Python</code>, 
+            <code>Swift</code> and 
+            <code>Kotlin</code>.
         </p>
 
         <h1 class="display-4">Examples of my work</h1>
         <br>
 
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-3">
+        <div class="row">
+            <div class="col-sm mb-3">
                 <div class="card text-center h-100">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h4 class="card-title">
                             Novi by Pinja
-                        </h5>
+                        </h4>
+                        <h6 class="card-subtitle mb-2 mt-1 fw-normal subtitle">
+                            Software developer, CI/CD leader, AI Ambassador
+                        </h6>
                         <p class="card-text">
                             Preventive maintenance system which is used in over 30 countries. 
                             Used by companies such as 
-                            <a href="https://pinja.com/en/success-stories/veolia">Veolia</a> and 
-                            <a href="https://pinja.com/en/success-stories/valmet-north-american-roll-service">Valmet</a>.
-                            Keywords are <code>ASP.NET Core</code>, <code>.NET Framework</code>, <code>CI/CD</code> and <code>SQL</code>.
+                            <a class="link" href="https://pinja.com/en/success-stories/veolia">Veolia</a> and 
+                            <a class="link" href="https://pinja.com/en/success-stories/valmet-north-american-roll-service">Valmet</a>.
+                            Keywords: <code>ASP.NET Core</code>, <code>.NET</code>, <code>.NET Framework</code>, 
+                            <code>CI/CD</code> and <code>SQL</code>.
                         </p>
                     </div>
                     <div class="card-footer">
                         <a href="https://pinja.com/en/services/manufacturing-industry/novi"
-                            class="btn btn-primary">Check it out</a>
+                           class="btn nappi fw-semibold">Check it out</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col mb-3">
+            <div class="col-sm mb-3">
                 <div class="card text-center h-100">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            Pull My Data (Team leader)
-                        </h5>
+                        <h4 class="card-title">
+                            Pull My Data
+                        </h4>
+                        <h6 class="card-subtitle mb-2 mt-1 fw-normal subtitle">
+                            Team leader, developer
+                        </h6>
                         <p class="card-text">
                             An app where users can import their Garmin data and answer questions about physical
                             rehabilitation.
-                            App is made using <code>NestJS</code>, <code>MongoDB</code> and <code>React</code> in
+                            The app is made using <code>NestJS</code>, <code>MongoDB</code> and <code>React</code> running in
                             <code>Docker containers</code>. The Docker images are built with
                             <code>Jenkins pipelines</code>.
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="http://codebox.pages.labranet.jamk.fi/core/20-Arkkitehtuuri-ja-suunnittelu/toteutus/"
-                            class="btn btn-primary">Check it out</a>
+                        <button type="button" class="btn btn-secondary" disabled>
+                            Ask for details!
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col mb-3">
+            <div class="col-sm mb-3">
                 <div class="card text-center h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Bob the Bot</h5>
+                        <h4 class="card-title">
+                            Planting Calculator
+                        </h4>
+                        <h6 class="card-subtitle mb-2 mt-1 fw-normal subtitle">
+                            Trying out Kotlin & Android development
+                        </h6>
                         <p class="card-text">
-                            Bob the Bot is a simple Discord bot made with <code>JavaScript</code> using
-                            <code>Discord.js</code>.
-                            The bot is deployed to my DigitalOcean server into a <code>Docker container</code> with
-                            <code>GitLab CI/CD pipeline</code>.
+                            Planting calculator is a simple app to calculate how much barley needs to be planted per hectare.
+                            My dad wanted an app for this so I made it.
+                            This was a rather quick reintroduction to <code>Kotlin</code> and <code>Android</code> development.
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="https://gitlab.com/hjkuja/bob-the-bot" class="btn btn-primary">Check it out</a>
+                        <a href="https://github.com/hjkuja/PlantingCalculator" 
+                           class="btn nappi fw-semibold">Check it out</a>
                     </div>
                 </div>
             </div>
@@ -136,22 +167,22 @@
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <p class="lead">Links</p>
-            <div class="row row-cols-3" style="text-align: center;">
+        <div class="container text-center">
+            <p class="lead">Check out the links!</p>
+            <div class="row row-cols-3">
                 <div class="col">
-                    <a href="https://www.linkedin.com/in/hjkuja/" style="color: #0077B5;">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                </div>
-                <div class="col" style="margin-top: -3px;">
-                    <a href="https://github.com/hjkuja" style="color: #000000;">
-                        <i class="fab fa-github fa-2x"></i>
+                    <a href="https://www.linkedin.com/in/hjkuja/" title="LinkedIn link">
+                        <i class="fa-brands fa-linkedin fa-3x"></i>
                     </a>
                 </div>
                 <div class="col">
-                    <a href="https://gitlab.com/hjkuja" style="color: #E86A55;">
-                        <i class="fab fa-gitlab fa-2x"></i>
+                    <a href="https://github.com/hjkuja" title="GitHub link">
+                        <i id="github" class="fa-brands fa-github fa-3x"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://gitlab.com/hjkuja" title="GitLab link">
+                        <i id="gitlab" class="fa-brands fa-gitlab fa-3x"></i>
                     </a>
                 </div>
             </div>
@@ -159,9 +190,7 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
     <script>redir = () => { window.location.href = 'https://www.linkedin.com/in/hjkuja/'; }</script>
 </body>
 

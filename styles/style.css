@@ -1,0 +1,90 @@
+#github {
+    color: azure;
+}
+
+#gitlab {
+    color: #E86A55;
+}
+
+.text {
+    color: var(--text);
+}
+
+.navpanel {
+    margin-left: 1em;
+    padding-top: 1em;
+    color: #e9fbf7;
+}
+
+.profile-wrapper {
+  width: 250px;
+  height: 250px;
+}
+
+.card {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.subtitle {
+    color: var(--text);
+    opacity: 65%;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.nappi {
+    background-color: var(--secondary);
+}
+
+.nappi:hover {
+  color: var(--background);
+  background-color: var(--accent);
+  border-color: var(--bs-btn-hover-border-color);
+}
+
+.link {
+    color: var(--secondary);
+}
+
+.link:hover {
+    color: var(--accent);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: var(--background);
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+code {
+    color: var(--secondary);
+}
+
+code:hover {
+    color: var(--accent);
+}
+
+@media only screen and (max-width:600px) {
+    .footer {
+        margin-bottom: 12vh
+    }
+}
+
+:root{
+--text: #f7f9fa;
+--background: #030b10;
+--primary: #1a5880;
+--secondary: #ebb06e;
+--accent: #d38d3d;
+}
