@@ -21,12 +21,22 @@
   height: 250px;
 }
 
-.dark-card {
+.card {
     background-color: var(--primary);
+    color: var(--text);
 }
 
-.card {
-    color: var(--background);
+.card code {
+    color: var(--secondary);
+}
+
+.card code:hover {
+    color: var(--accent);
+}
+
+.subtitle {
+    color: var(--text);
+    opacity: 65%;
 }
 
 .footer {
@@ -36,18 +46,22 @@
 }
 
 .nappi {
-    color: var(--background);
-    background-color: var(--accent);
+    background-color: var(--secondary);
 }
 
 .nappi:hover {
   color: var(--background);
-  background-color: var(--secondary);
+  background-color: var(--accent);
   border-color: var(--bs-btn-hover-border-color);
 }
 
 .link {
-    color: var(--accent)
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+.link:hover {
+    color: var(--accent);
 }
 
 html {
@@ -69,10 +83,9 @@ body {
 }
 
 :root{
---text: #e2f0f9;
+--text: #f7f9fa;
 --background: #030b10;
---primary: #8cc1e7;
---secondary: #b64282;
---accent: #d56b30;
-
+--primary: #1a5880;
+--secondary: #ebb06e;
+--accent: #d38d3d;
 }
