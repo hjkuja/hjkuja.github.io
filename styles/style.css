@@ -26,7 +26,7 @@
 }
 
 .card {
-    color: var(--text);
+    color: var(--background);
 }
 
 .footer {
@@ -69,9 +69,10 @@ body {
 }
 
 :root{
---text: #dcdcf8;
---background: #050718;
---primary: #171e68;
---secondary: #aa43ae;
---accent: #da55bc;
+--text: #e2f0f9;
+--background: #030b10;
+--primary: #8cc1e7;
+--secondary: #b64282;
+--accent: #d56b30;
+
 }
